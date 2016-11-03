@@ -16,9 +16,7 @@ def compute_euclidean_distances( X, Y ) :
     Y: M-by-D numpy array 
     
     Should return dist: M-by-N numpy array   
-    """
-    X = X[200:205,:]
-    Y = Y[400:420,:]
+    """    
     return np.sqrt((np.square(X[:,np.newaxis] - Y).sum(axis=2)))
  
 
